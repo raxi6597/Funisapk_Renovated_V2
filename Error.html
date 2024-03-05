@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No se puede acceder desde una computadora</title>
+    <style>
+      
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #F70B0B;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Cambiado para ser un porcentaje del ancho del viewport */
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.header-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+p {
+    color: #D5D2D2;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Para pantallas de 320px a 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 90%; /* Ajustar el ancho para que sea un porcentaje del viewport */
+        max-width: none; /* Eliminar el límite de ancho máximo */
+        padding: 10px; /* Reducir el relleno */
+    }
+}
+
+/* Para pantallas de 481px a 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajustar el ancho para que sea un porcentaje del viewport */
+        max-width: none; /* Eliminar el límite de ancho máximo */
+        padding: 15px; /* Modificar el relleno */
+    }
+}
+
+/* Para pantallas de 769px a 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* No se aplican cambios adicionales */
+}
+
+/* Para pantallas de 1025px a 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* No se aplican cambios adicionales */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.ibb.co/PC26QGh/Picsart-24-03-05-11-39-44-086.png" alt="Imagen" class="header-image">
+        <h1>No se puede acceder desde una computadora</h1>
+        <p>Por favor, acceda desde su teléfono móvil para ver el contenido.</p>
+        <a href="#" class="back-link">Volver al inicio</a>
+    </div>
+    
+    <script>
+      window.onload = function() {
+        var width = window.innerWidth;
+      
+        // Redirigir a contenido.html si el ancho de la ventana es menor o igual a 769px
+        if (width < 769) {
+          window.location.href = 'index.html';
+        }
+      }
+    </script>
+</body>
+</html>
